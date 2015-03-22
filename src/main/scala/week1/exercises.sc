@@ -43,3 +43,22 @@ balance("".toList)        //True
 balance(":-)".toList)     //False
 balance("())(".toList)    //False
 balance("(())".toList)    //True
+
+/**
+ * Exercise 3 (Integer partition algorithm)
+ */
+def countChange(money: Int, coins: List[Int]): Int = {
+  def loop(counter: Int, money: Int, coins: List[Int]): Int = {
+    if(money < 0) counter
+    else if(coins.isEmpty) {
+      if(money == 0) counter.+(1) else counter
+    }
+    else loop(counter, money, coins.tail) + loop(counter, money-coins.head, coins)
+  }
+  loop(0, money, coins)
+}
+
+/**
+ * TEST Exercise 3
+ */
+countChange(4, List(1, 2))  //3
