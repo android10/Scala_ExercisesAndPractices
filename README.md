@@ -1,8 +1,7 @@
 Scala - Exercises and Practices
 =========================
 
-This is a sample app which is part of Coursera Scala Course.
-It also contains exercises from the Scala Book: Scala for the Impatient.
+Playing around some scala exercises.
 
 
 License
