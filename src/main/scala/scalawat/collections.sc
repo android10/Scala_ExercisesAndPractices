@@ -12,3 +12,9 @@ println(map(2))
 println(map + (3 -> "Cejas")) // Creates new instance.
 println(map.head)
 println(map.tail)
+
+def timesTwo(number: Int): Int = number * 2
+timesTwo(3)
+
+val myList = List(10, 20, 30)
+println(myList.map(timesTwo))
